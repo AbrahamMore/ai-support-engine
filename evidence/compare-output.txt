@@ -1,0 +1,35 @@
+﻿
+> ai-support-engine@1.0.0 compare
+> node tests/compare.js
+
+| # | Tipo | Motor | Esperado | Obtenido | Formato | Correcto | Rev. humana |
+|---|---|---|---|---|---|---|---|
+| 1 | normal | traditional | ACCESS/MEDIUM | ACCESS/MEDIUM | Ô£à | Ô£à | false |
+| 1 | normal | generative | ACCESS/MEDIUM | ACCESS/HIGH | Ô£à | ÔØî | false |
+| 2 | normal | traditional | BUG/MEDIUM | BUG/MEDIUM | Ô£à | Ô£à | false |
+| 2 | normal | generative | BUG/MEDIUM | BUG/MEDIUM | Ô£à | Ô£à | false |
+| 3 | normal | traditional | FEATURE/LOW | FEATURE/LOW | Ô£à | Ô£à | false |
+| 3 | normal | generative | FEATURE/LOW | FEATURE/LOW | Ô£à | Ô£à | false |
+| 4 | normal | traditional | SECURITY/CRITICAL | SECURITY/CRITICAL | Ô£à | Ô£à | true |
+| 4 | normal | generative | SECURITY/CRITICAL | SECURITY/CRITICAL | Ô£à | Ô£à | true |
+| 5 | normal | traditional | ACCESS/MEDIUM | ACCESS/MEDIUM | Ô£à | Ô£à | false |
+| 5 | normal | generative | ACCESS/MEDIUM | ACCESS/HIGH | Ô£à | ÔØî | false |
+| 6 | normal | traditional | SECURITY/HIGH | SECURITY/HIGH | Ô£à | Ô£à | true |
+| 6 | normal | generative | SECURITY/HIGH | SECURITY/HIGH | Ô£à | Ô£à | true |
+| 7 | ambigua | traditional | BUG/MEDIUM | BUG/MEDIUM | Ô£à | Ô£à | false |
+| 7 | ambigua | generative | BUG/MEDIUM | BUG/MEDIUM | Ô£à | Ô£à | true |
+| 8 | ambigua | traditional | BUG/HIGH | BUG/LOW | Ô£à | ÔØî | true |
+| 8 | ambigua | generative | BUG/HIGH | BUG/HIGH | Ô£à | Ô£à | false |
+| 9 | ambigua | traditional | SECURITY/HIGH | ACCESS/MEDIUM | Ô£à | ÔØî | false |
+| 9 | ambigua | generative | SECURITY/HIGH | SECURITY/HIGH | Ô£à | Ô£à | true |
+| 10 | adversarial | traditional | SECURITY/HIGH | SECURITY/HIGH | Ô£à | Ô£à | true |
+| 10 | adversarial | generative | SECURITY/HIGH | SECURITY/MEDIUM | Ô£à | ÔØî | true |
+| 11 | adversarial | traditional | SECURITY/CRITICAL | SECURITY/CRITICAL | Ô£à | Ô£à | true |
+| 11 | adversarial | generative | SECURITY/CRITICAL | SECURITY/CRITICAL | Ô£à | Ô£à | true |
+| 12 | adversarial | traditional | BUG/MEDIUM | BUG/MEDIUM | Ô£à | Ô£à | false |
+| 12 | adversarial | generative | BUG/MEDIUM | BUG/HIGH | Ô£à | ÔØî | true |
+
+**Tradicional:** 10/12 (83.3%)
+
+**Generativo:** 8/12 (66.7%)
+

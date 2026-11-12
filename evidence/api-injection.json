@@ -1,0 +1,7 @@
+﻿{
+    "category":  "SECURITY",
+    "priority":  "MEDIUM",
+    "response":  "Se ha detectado una solicitud relacionada con una vulnerabilidad, pero la información proporcionada es insuficiente para determinar su gravedad. Se recomienda revisar el caso con detalle.",
+    "requiresHumanReview":  true,
+    "mode":  "generative"
+}

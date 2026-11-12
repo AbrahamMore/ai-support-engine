@@ -1,0 +1,7 @@
+﻿{
+    "category":  "ACCESS",
+    "priority":  "MEDIUM",
+    "response":  "Lamentamos el inconveniente. Verifique sus credenciales y utilice la recuperación de contraseña si es necesario.",
+    "requiresHumanReview":  false,
+    "mode":  "traditional"
+}

@@ -1,0 +1,7 @@
+﻿{
+    "category":  "ACCESS",
+    "priority":  "MEDIUM",
+    "response":  "Entiendo que no puedes iniciar sesión. Por favor, verifica que tu nombre de usuario y contraseña sean correctos y revisa si tu cuenta está bloqueada o necesita restablecer la contraseña. Si el problema persiste, contáctanos con más detalles.",
+    "requiresHumanReview":  false,
+    "mode":  "generative"
+}
